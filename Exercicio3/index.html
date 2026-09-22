@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Caixa</title>
+</head>
+<body>
+    
+    <center>
+        <h1>CAIXA DO ATACADÃO</h1><hr>
+
+        <form id="formulario">
+            <br><label for="preco">Preço do Produto:</label>
+            <input type="number" placeholder="Digite o preço do produto" id="preco" step="00.01"><br><br>
+
+            <label for="qtd">Quantidade:</label>
+            <input type="number" placeholder="Digite o preço do produto" id="qtd"><br><br>
+            
+            <strong>Forma de Pagamento:</strong><br><br>
+
+            <input type="radio" name="fp" id="pix" value="pix">
+            <label for="pix"><strong>Pix</strong> <em>(5% de desconto)</em></label>
+
+            <input type="radio" name="fp" id="din" value="din">
+            <label for="din"><strong>Dinheiro</strong> <em>(10% de desconto)</em></label>
+
+            <input type="radio" id="cartao" value="cartao">
+            <label for="cartao"><strong>Cartão</strong> <em>(sem desconto)</em></label><br><br>
+            
+            <button type="button" onclick="validar()">Calcular</button>
+            </form><br><hr>
+            
+            <h2>Resultados:</h2><br>
+
+            <p id="validacao"></p>
+    </center>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
